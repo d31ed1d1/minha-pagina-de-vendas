@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantinho Especial - Vendas Exclusivas</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Pacifico e Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Aplicando as fontes personalizadas */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFF0F5; /* Lavanda Blush - um rosa bem clarinho */
+        }
+        .font-title {
+            font-family: 'Pacifico', cursive;
+        }
+        /* Efeito de sombra sutil nos cards e botões */
+        .cute-shadow {
+            box-shadow: 0 4px 10px rgba(219, 112, 147, 0.2); /* Sombra rosa pálido */
+        }
+        .cute-shadow:hover {
+            box-shadow: 0 6px 15px rgba(219, 112, 147, 0.3);
+            transform: translateY(-2px);
+        }
+        .btn-main {
+            transition: all 0.3s ease;
+        }
+        /* Estilos para a animação de fade-in */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Estilo para o FAQ */
+        .faq-question {
+            cursor: pointer;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Container Principal -->
+    <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+        <!-- Header -->
+        <header class="text-center mb-12 fade-in-section">
+            <h1 class="font-title text-5xl md:text-6xl text-pink-500 mb-2">Cantinho da Deusa</h1>
+            <p class="text-lg text-gray-600">Conteúdos e experiências exclusivas com carinho para você</p>
+        </header>
+
+        <!-- Seção Sobre o Produto -->
+        <section class="bg-white rounded-2xl p-8 mb-12 cute-shadow transition-all duration-300 fade-in-section">
+            <h2 class="text-3xl font-bold text-pink-500 mb-4 text-center">O que você vai encontrar?</h2>
+            <p class="text-center text-gray-700 leading-relaxed">
+                Bem-vindo(a) ao meu espaço exclusivo! Aqui você terá acesso a uma coleção especial de conteúdos e experiências de **macrofilia e podolatria**. Explore os pacotes e encontre o que mais combina com você. Tudo é tratado com discrição, segurança e bom gosto.
+            </p>
+        </section>
+
+        <!-- Seção de Planos -->
+        <section class="fade-in-section">
+            <h2 class="text-3xl font-bold text-pink-500 mb-8 text-center">Nossos Planos</h2>
+            
+            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+
+                <!-- Plano 1: RP Privativo -->
+                <div class="bg-white rounded-2xl p-8 flex flex-col cute-shadow transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-comments text-4xl text-pink-400"></i>
+                        <h3 class="text-2xl font-bold mt-4">RP Privativo</h3>
+                        <p class="font-title text-4xl text-pink-500 my-4">R$155</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-700 mb-8 flex-grow">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Um dia inteiro de Roleplay.</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Atenção total e dedicada.</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Experiência imersiva e privada.</li>
+                    </ul>
+                    <a href="https://discord.com/users/1401719609836703774" target="_blank" class="block w-full text-center bg-pink-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-pink-600 btn-main cute-shadow">
+                        Quero esse!
+                    </a>
+                </div>
+
+                <!-- Plano 2: VIP -->
+                <div class="bg-white rounded-2xl p-8 flex flex-col cute-shadow transition-all duration-300 border-4 border-pink-500 relative">
+                    <span class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">MAIS POPULAR</span>
+                    <div class="text-center mb-6">
+                        <i class="fas fa-crown text-4xl text-yellow-400"></i>
+                        <h3 class="text-2xl font-bold mt-4">VIP Deusa</h3>
+                        <p class="font-title text-4xl text-pink-500 my-4">R$260</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-700 mb-8 flex-grow">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> **Dois dias** de atenção total.</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Cargo **"Preferido(a) da Deusa"**.</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Prioridade máxima no atendimento.</li>
+                    </ul>
+                    <a href="https://discord.com/users/1401719609836703774" target="_blank" class="block w-full text-center bg-pink-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-pink-600 btn-main cute-shadow">
+                        Quero ser VIP!
+                    </a>
+                </div>
+
+                <!-- Plano 3: Pack de Fotos -->
+                <div class="bg-white rounded-2xl p-8 flex flex-col cute-shadow transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-camera-retro text-4xl text-pink-400"></i>
+                        <h3 class="text-2xl font-bold mt-4">Pack de Fotos</h3>
+                        <p class="font-title text-4xl text-pink-500 my-4">R$300</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-700 mb-8 flex-grow">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Tema: **Podolatria (Pés)**.</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Pack com 15 fotos exclusivas.</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Alta qualidade e sem censura.</li>
+                    </ul>
+                    <a href="https://discord.com/users/1401719609836703774" target="_blank" class="block w-full text-center bg-pink-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-pink-600 btn-main cute-shadow">
+                        Quero o Pack!
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Depoimentos -->
+        <section class="mt-16 fade-in-section">
+            <h2 class="text-3xl font-bold text-pink-500 mb-8 text-center">O que dizem sobre a experiência</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl p-6 cute-shadow">
+                    <p class="text-gray-600 italic">"A atenção que recebi foi incrível, me senti muito especial. O RP foi perfeito, superou todas as minhas expectativas. Recomendo demais!"</p>
+                    <p class="text-right font-bold text-pink-500 mt-4">- Cliente Satisfeito</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 cute-shadow">
+                    <p class="text-gray-600 italic">"Comprei o pack de fotos e a qualidade é sensacional. Tudo feito com muito bom gosto e profissionalismo. Com certeza comprarei de novo."</p>
+                    <p class="text-right font-bold text-pink-500 mt-4">- Fã de Carteirinha</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de FAQ -->
+        <section class="mt-16 fade-in-section">
+            <h2 class="text-3xl font-bold text-pink-500 mb-8 text-center">Perguntas Frequentes</h2>
+            <div class="bg-white rounded-2xl p-8 cute-shadow space-y-4">
+                <div class="faq-item">
+                    <div class="faq-question flex justify-between items-center p-4">
+                        <h4 class="font-semibold text-lg">Como o conteúdo é entregue?</h4>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-4 pb-4 text-gray-600">
+                        <p>Após a confirmação do pagamento via Pix, todo o conteúdo (fotos, vídeos ou acesso a cargos) é liberado diretamente pelo Discord, em uma conversa privada ou em canais exclusivos do servidor.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question flex justify-between items-center p-4">
+                        <h4 class="font-semibold text-lg">O atendimento é sigiloso?</h4>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-4 pb-4 text-gray-600">
+                        <p>Absolutamente! A sua privacidade é minha maior prioridade. Todas as conversas, pagamentos e entregas são feitos de forma 100% privada e segura. Nenhuma informação sua será compartilhada.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question flex justify-between items-center p-4">
+                        <h4 class="font-semibold text-lg">Quais são as regras para o RP?</h4>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-4 pb-4 text-gray-600">
+                        <p>As regras básicas são respeito mútuo e consentimento. Todos os detalhes, limites e o cenário do Roleplay são combinados previamente na nossa conversa privada para garantir que a experiência seja confortável e prazerosa para ambos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-16 fade-in-section">
+            <p class="text-gray-500">
+                Pronto(a) para começar? Clique em um dos planos para falar comigo no Discord!
+            </p>
+            <p class="text-sm text-gray-400 mt-2">
+                Pagamentos via Pix. Atendimento 100% privado.
+            </p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Script para animação de fade-in ao rolar a página
+        const sections = document.querySelectorAll('.fade-in-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Script para o FAQ (acordeão)
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const icon = question.querySelector('i');
+
+            question.addEventListener('click', () => {
+                const isVisible = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+                
+                // Fecha todos os outros
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.querySelector('.faq-answer').style.maxHeight = '0px';
+                        otherItem.querySelector('.faq-question i').style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                // Abre ou fecha o clicado
+                if (isVisible) {
+                    answer.style.maxHeight = '0px';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
